@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.HomeFragment"
+    android:weightSum="10"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Temperature"
+                android:textColor="@color/design_default_color_primary"
+                android:textSize="24sp">
+
+            </TextView>
+
+            <ImageView
+                android:id="@+id/ic_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/temp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_temp"
+                android:textSize="24sp">
+
+            </ImageView>
+
+            <View
+                android:id="@+id/line_i"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/temp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="7dp"
+                android:layout_toRightOf="@id/ic_temp"
+                android:background="@color/purple_200">
+
+            </View>
+
+            <TextView
+                android:id="@+id/cerv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ic_temp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Cervical mucus"
+                android:textColor="@color/design_default_color_primary"
+                android:textSize="24sp">
+
+            </TextView>
+
+            <ImageView
+                android:id="@+id/ic_none"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cerv"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_none"
+                android:textSize="24sp">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/none1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ic_none"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:text="none"
+                android:textColor="@color/black"
+                android:textSize="10sp">
+
+            </TextView>
+
+            <ImageView
+                android:id="@+id/ic_sticky"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cerv"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/ic_none"
+                android:src="@drawable/ic_sticky"
+                android:textSize="24sp">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/sticky1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ic_sticky"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/none1"
+                android:text="Sticky"
+                android:textColor="@color/black"
+                android:textSize="10sp">
+
+            </TextView>
+
+            <ImageView
+                android:id="@+id/ic_creamy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cerv"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="23dp"
+                android:layout_toRightOf="@id/ic_sticky"
+                android:src="@drawable/ic_creamy"
+                android:textSize="24sp">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/creamy1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ic_creamy"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/sticky1"
+                android:text="creamy"
+                android:textColor="@color/black"
+                android:textSize="10sp">
+
+            </TextView>
+
+            <ImageView
+                android:id="@+id/ic_egg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cerv"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/ic_creamy"
+                android:src="@drawable/ic_egg_white"
+                android:textSize="24sp">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/egg1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ic_egg"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/creamy1"
+                android:text="egg white"
+                android:textColor="@color/black"
+                android:textSize="10sp">
+
+            </TextView>
+
+            <ImageView
+                android:id="@+id/ic_watery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cerv"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="22dp"
+                android:layout_toRightOf="@id/ic_egg"
+                android:src="@drawable/ic_watery"
+                android:textSize="24sp">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/watery1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ic_watery"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/egg1"
+                android:text="watery"
+                android:textColor="@color/black"
+                android:textSize="10sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/none1"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Sex"
+                android:textColor="@color/design_default_color_primary"
+                android:textSize="24sp">
+
+            </TextView>
+
+
+            <ImageView
+                android:id="@+id/s_none"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sex"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_pure"
+                android:textSize="24sp">
+
+            </ImageView>
+
+
+            <TextView
+                android:id="@+id/s_none1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/s_none"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:text="none"
+                android:textColor="@color/black"
+                android:textSize="10sp">
+
+            </TextView>
+
+
+            <ImageView
+                android:id="@+id/protect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sex"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/s_none"
+                android:src="@drawable/ic_safe"
+                android:textSize="24sp">
+
+            </ImageView>
+
+
+            <TextView
+                android:id="@+id/protect1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/protect"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/s_none1"
+                android:text="protected"
+                android:textColor="@color/black"
+                android:textSize="10sp">
+
+            </TextView>
+
+
+            <ImageView
+                android:id="@+id/ic_not_protected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sex"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/protect"
+                android:src="@drawable/ic_unsafe"
+                android:textSize="10sp">
+
+            </ImageView>
+
+
+            <TextView
+                android:id="@+id/ic_not_protected1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ic_not_protected"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/protect1"
+                android:text="not protected"
+                android:textColor="@color/black"
+                android:textSize="10sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/mens"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/s_none1"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Menstruation"
+                android:textColor="@color/design_default_color_primary"
+                android:textSize="24sp">
+
+            </TextView>
+
+            <ImageView
+                android:id="@+id/ic_light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mens"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_light"
+                android:textSize="24sp">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/light1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ic_light"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:text="light"
+                android:textColor="@color/black"
+                android:textSize="10sp">
+
+            </TextView>
+
+            <ImageView
+                android:id="@+id/ic_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mens"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/ic_light"
+                android:src="@drawable/ic_medium"
+                android:textSize="24sp">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/medium1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ic_medium"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/light1"
+                android:text="medium"
+                android:textColor="@color/black"
+                android:textSize="10sp">
+
+            </TextView>
+
+            <ImageView
+                android:id="@+id/ic_heavy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mens"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/ic_medium"
+                android:src="@drawable/ic_heavy"
+                android:textSize="24sp">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/heavy1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ic_heavy"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/medium1"
+                android:text="heavy"
+                android:textColor="@color/black"
+                android:textSize="10sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/moods"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/light1"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Moods"
+                android:textColor="@color/design_default_color_primary"
+                android:textSize="24sp">
+
+            </TextView>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/light1"
+                android:layout_marginLeft="223dp"
+                android:layout_marginTop="32dp"
+                android:layout_toRightOf="@id/moods"
+                android:src="@drawable/ic_emotions" />
+
+            <EditText
+                android:id="@+id/add_moods"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/moods"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:hint="Tap to add"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="24sp">
+
+            </EditText>
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/moods"
+                android:layout_marginLeft="175dp"
+                android:layout_marginTop="47dp"
+                android:layout_toRightOf="@id/add_moods" />
+
+            <TextView
+                android:id="@+id/symp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/add_moods"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Symptoms"
+                android:textColor="@color/design_default_color_primary"
+                android:textSize="24sp">
+
+            </TextView>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/add_moods"
+                android:layout_marginLeft="175dp"
+                android:layout_marginTop="24dp"
+                android:layout_toRightOf="@id/symp"
+                android:src="@drawable/ic_sick" />
+
+            <EditText
+                android:id="@+id/add_symp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/symp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:hint="Tap to add"
+                android:textColorHint="@color/black"
+                android:textSize="24sp">
+
+            </EditText>
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/symp"
+                android:layout_marginLeft="175dp"
+                android:layout_marginTop="35dp"
+                android:layout_toRightOf="@id/add_symp" />
+
+            <EditText
+                android:id="@+id/note_pad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/add_symp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:hint="Note pad"
+                android:maxLines="5"
+                android:textColorHint="@color/design_default_color_primary"
+                android:textSize="24sp">
+
+            </EditText>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

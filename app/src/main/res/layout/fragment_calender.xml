@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.calenderFragment"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="vertical"
+        android:background="@drawable/bg_calender">
+
+        <CalendarView
+            android:id="@+id/calender_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+
+        </CalendarView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/first_day"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="First Day"
+                android:textSize="20sp"
+                android:layout_marginTop="7dp"
+                android:textColor="@color/black">
+            </TextView>
+            <View
+                android:id="@+id/line_i"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="@color/purple_200"
+                android:layout_marginTop="7dp"
+                android:layout_below="@id/first_day">
+
+            </View>
+
+            <TextView
+                android:id="@+id/last_day"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Last Day"
+                android:layout_marginTop="7dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_below="@id/line_i">
+
+            </TextView>
+            <View
+                android:id="@+id/line_2"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="7dp"
+                android:background="@color/purple_200"
+                android:layout_below="@id/last_day">
+
+            </View>
+
+            <TextView
+                android:id="@+id/safe_day_before"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="safe Days Before"
+                android:textSize="20sp"
+                android:layout_marginTop="7dp"
+                android:textColor="@color/black"
+                android:layout_below="@id/line_2">
+
+            </TextView>
+            <View
+                android:id="@+id/line_3"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="7dp"
+                android:background="@color/purple_200"
+                android:layout_below="@id/safe_day_before">
+
+            </View>
+
+            <TextView
+                android:id="@+id/safe_day_after"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Safe Days After"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="7dp"
+                android:layout_below="@id/line_3">
+
+            </TextView>
+            <View
+                android:id="@+id/line_4"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="7dp"
+                android:background="@color/purple_200"
+                android:layout_below="@id/safe_day_after">
+
+            </View>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/line_4"
+                android:text="next"
+                android:layout_marginTop="10dp"
+                android:id="@+id/nxt">
+
+            </Button>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
